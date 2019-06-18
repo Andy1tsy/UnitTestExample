@@ -16,9 +16,9 @@ namespace UnitTestingExample.Tests
         public void DoubleStringTest()
         {
 
-            var testString = " ";
+            var testString = "gfkytkt";
             var result = StringMethods.DoubleString(testString);
-            Assert.AreEqual(result, testString + testString);
+            Assert.AreEqual(result, "gfkytktgfkytkt");
         }
 
         [TestMethod()]
@@ -27,7 +27,7 @@ namespace UnitTestingExample.Tests
            
             var testString = "kuctykr";
             var result = StringMethods.CutHeadString(testString);
-            Assert.AreEqual(result, testString.Remove(0, 2));
+            Assert.AreEqual(result, "ctykr");
         }
 
         [TestMethod()]
@@ -36,7 +36,7 @@ namespace UnitTestingExample.Tests
            
             var testString = "lucuckg";
             var result = StringMethods.CutTailString(testString);
-            Assert.AreEqual(result, testString.Remove(testString.Length - 2));
+            Assert.AreEqual(result, "lucuc");
         }
 
         [TestMethod()]
